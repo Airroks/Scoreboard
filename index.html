@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Scoreboard</title>
+    <!-- Importiere das CSS-Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Scoreboard für das Heimteam -->
+        <div class="scoreboard" id="home">
+            <h3>HOME</h3>
+            <!-- Anzeige der Punktzahl -->
+            <div class="score" id="home-score">0</div>
+            <!-- Container für die Buttons -->
+            <div class="button-container">
+                <button class="score-btn" data-team="home" data-points="1">+1</button>
+                <button class="score-btn" data-team="home" data-points="2">+2</button>
+                <button class="score-btn" data-team="home" data-points="3">+3</button>
+            </div>
+        </div>
+        <!-- Scoreboard für das Gastteam -->
+        <div class="scoreboard" id="guest">
+            <h3>GUEST</h3>
+            <!-- Anzeige der Punktzahl -->
+            <div class="score" id="guest-score">0</div>
+            <!-- Container für die Buttons -->
+            <div class="button-container">
+                <button class="score-btn" data-team="guest" data-points="1">+1</button>
+                <button class="score-btn" data-team="guest" data-points="2">+2</button>
+                <button class="score-btn" data-team="guest" data-points="3">+3</button>
+            </div>
+        </div>
+    </div>
+    <!-- Reset-Button hinzufügen -->
+    <div class="reset-container">
+        <button id="reset-btn">Reset</button>
+    </div>
+    <!-- Importiere das JavaScript-File -->
+    <script src="index.js"></script>
+</body>
+</html>
